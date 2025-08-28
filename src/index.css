@@ -32,6 +32,11 @@ button {
   cursor: pointer;
 }
 
+figcaption {
+  font-size: calc(var(--text-xs) / 1.2);
+  font-style: italic;
+}
+
 .monstread {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

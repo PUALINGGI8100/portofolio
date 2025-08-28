@@ -2,7 +2,7 @@ import { useState } from "react"
 import { FaChevronCircleDown, FaChevronCircleUp } from "react-icons/fa";
 
 export default function Dropdown({ children, teks }) {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
     const handleClick = () => {
         setShow(!show);
     }
