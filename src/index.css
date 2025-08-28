@@ -1,1 +1,41 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+html, * { margin: 0; box-sizing: border-box;}
+
+.body-container {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(230, 230, 230); */
+}
+.body-section {
+    background-color: rgb(253, 253, 253);
+    border-color: rgb(209, 209, 209);
+}
+
+h1:not(.styled),
+h2:not(.styled),
+h3:not(.styled),
+h4:not(.styled),
+h5:not(.styled),
+h6:not(.styled),
+p:not(.styled) {
+  color: rgb(80, 80, 80);
+}
+
+button {
+  cursor: pointer;
+}
+
+.monstread {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+.dm-mono {
+    font-family: "DM Mono", monospace;
+}
