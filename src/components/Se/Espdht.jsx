@@ -5,14 +5,14 @@ import "./styles/Espdht.css";
 
 export default function Espdht(){
     return (
-        <article className="espdht-body grow flex flex-col gap-5">
-            <header className="text-xl lg:text-3xl font-bold text-slate-50 monstread text-center flex flex-col max-h-[15%] xl:max-h-[10%]">
+        <article className="espdht-body grow flex flex-col max-w-full gap-5 p-5">
+            <header className="text-xl lg:text-3xl font-bold monstread text-center flex flex-col max-h-[15%] xl:max-h-[10%]">
                 <h1 className="styled">
                     SISTEM PAKAR PENGENALAN PENYAKIT DAN HAMA JAGUNG BERBASIS <em>CERTAINTY FACTOR</em>
                 </h1>
             </header>
             <section className="shrink flex flex-col lg:flex-row gap-5 sm:gap-2 max-h-[70%] xl:gap-5 xl:max-h-[80%]">
-                <figure className="slider">
+                <figure className="slider lg:order-2">
                     <div className="slide">    
                         <div className="img-container">
                             <img src="/images/espdht/register.png" alt="register" />
@@ -38,7 +38,7 @@ export default function Espdht(){
                     </div>
                 </figure>
                 <aside className="grow flex flex-col lg:max-w-1/2 bg-slate-100 p-5 pt-3 broder rounded border-slate-200 overflow-y-auto max-h-full">
-                    <h1 className="text-3xl font-bold pb-2">Deskripsi</h1>
+                    {/* <h1 className="text-3xl font-bold pb-2">Deskripsi</h1> */}
                     <p className="text-sm">Merupakan salah satu syarat untuk menyelesaikan program sarjana di Universitas Al Asyariah Mandar.</p>
                     <p className="text-sm pb-2">Sistem dikembangkan Menggunakan metode ESDLC (John Durkin, 1994), Data diolah secara kuantitatif dengan memanfaatkan pendekatan certainty factor (John Durkin, 1994).</p>
                     <figure className="flex flex-col gap-2 w-full items-center grow justify-center max-h-[300px] p-3">
@@ -69,12 +69,12 @@ export default function Espdht(){
                     </figure>
                 </aside>
             </section>
-            <footer className="w-full flex gap-0 max-h-[10%]">
+            <footer className="w-full flex gap-0 max-h-[10%] max-w-full">
                 <div className="border rounded-tl-lg rounded-bl-lg bg-slate-800 text-slate-50 p-2 text-3xl">
                     <FaGithub />
                 </div>
-                <div className="flex border border-l-0 rounded-tr-lg rounded-br-lg px-5 grow items-center bg-slate-50 border-slate-800">
-                    <p className="text-">Https://github.com</p>
+                <div className="flex border border-l-0 rounded-tr-lg rounded-br-lg px-5 grow items-center bg-slate-50 border-slate-800 max-w-full overflow-x-auto flex-nowrap">
+                    <p className="text-sm lg:text-lg">https://github.com/PUALINGGI8100/ES_hama-penyakit-jagung.git</p>
                 </div>
             </footer>
         </article>

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@scope (.bomar-body) {
+    .slider {
+        @apply grow relative flex lg:max-w-1/2 overflow-hidden h-full min-w-full;
+    }
+    .slider .slide {
+        animation: 15s linear .5s infinite both running slide-in;
+        @apply relative left-0 flex flex-nowrap max-h-full max-w-max;
+    }
+
+    .slider .slide .img-container {
+        @apply flex min-w-full px-5 h-full justify-center items-center;
+    }
+
+    .slider .slide .img-container img {
+        @apply max-h-full;
+    }
+
+    @keyframes slide-in {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-400%);
+        }
+    }
+
+}
