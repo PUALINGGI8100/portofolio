@@ -27,7 +27,7 @@ export default function Se(){
                             }
                         >
                             <FaGlobe className="min-w-[25px] min-h-[25px]" />
-                            <p className="text-sm">Redesign BOMARFOOD</p>
+                            <p className="text-sm">Redesign Bomarfood</p>
                         </NavLink>
                     </Dropdown>
                     <Dropdown teks={"ANDROID Based"}>
